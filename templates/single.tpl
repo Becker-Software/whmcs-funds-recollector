@@ -1,11 +1,11 @@
 <div>
-    <p>Bitte geben Sie das Datum ein um alle Konten anzuzeigen die keine Guthaben aktivität NACH diesem Datum ausweisen.</p>
+    <p>Please enter the Customer ID to remove credit from.</p>
     <form method="post">
         <table class="form" width="100%" border="0" cellspacing="2" cellpadding="3">
             <tbody>
             <tr>
                 <td width="15%" class="fieldlabel">
-                    Kundennummer
+                    Customer ID
                 </td>
                 <td class="fieldarea">
                     <div class="form-group">

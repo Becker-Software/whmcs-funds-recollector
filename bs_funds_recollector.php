@@ -9,8 +9,8 @@ if (!defined("WHMCS")) {
 function bs_funds_recollector_config()
 {
 	return [
-		'name' => 'Guthaben verereinahmlichen',
-		'description' => 'Mit diesem Modul können Sie Guthaben von Kunden vereinahmlichen die länger inaktiv waren.',
+		'name' => 'Recollect funds',
+		'description' => 'This Module can be used to recollect funds after a certain time or by manual entry of the customer id.',
 		'author' => 'Martin Becker',
 		'language' => 'german',
 		'version' => '1.0',
@@ -23,7 +23,7 @@ function bs_funds_recollector_activate()
 	return [
 		// Supported values here include: success, error or info
 		'status' => 'success',
-		'description' => 'Die installation des Modules ist erfolgreich.',
+		'description' => 'Success',
 	];
 }
 
@@ -32,7 +32,7 @@ function bs_funds_recollector_deactivate()
 	return [
 		// Supported values here include: success, error or info
 		'status' => 'success',
-		'description' => 'Die deinstallation des Modules war erfolgreich.',
+        'description' => 'Success',
 	];
 }
 
@@ -53,11 +53,11 @@ function bs_funds_recollector_sidebar($vars)
 	return <<<"EOD"
 <div class="sidebar-header">
     <i class="fas fa-user"></i>
-    Guthaben
+    Credit
     </div>
     <ul class="menu">
-        <li><a href="addonmodules.php?module=bs_funds_recollector">Massenaktion</a></li>
-        <li><a href="addonmodules.php?module=bs_funds_recollector&action=single">Einzelauftrag</a></li>
+        <li><a href="addonmodules.php?module=bs_funds_recollector">Mass action</a></li>
+        <li><a href="addonmodules.php?module=bs_funds_recollector&action=single">Single action</a></li>
     </ul>
 </div>
 EOD;

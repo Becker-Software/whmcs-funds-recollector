@@ -1,11 +1,11 @@
 <div>
-    <p>Bitte geben Sie das Datum ein um alle Konten anzuzeigen die keine Guthaben aktivität NACH diesem Datum ausweisen.</p>
+    <p>Please enter the date to display all accounts that do not show credit activity AFTER this date. You will be shown a Table to confirm your choice before it is submitted.</p>
     <form method="post">
         <table class="form" width="100%" border="0" cellspacing="2" cellpadding="3">
             <tbody>
             <tr>
                 <td width="15%" class="fieldlabel">
-                    Datum
+                    Date
                 </td>
                 <td class="fieldarea">
                     <div class="form-group date-picker-prepend-icon">
@@ -28,9 +28,9 @@
         <tbody>
         <tr>
             <th>#</th>
-            <th>Kunde</th>
-            <th>Guthaben</th>
-            <th>Letzte Guthabenbewegung</th>
+            <th>Customer</th>
+            <th>Funds</th>
+            <th>Last Credit activity</th>
         </tr>
         {foreach from=$clients item=$client}
             <tr class="text-center">
@@ -44,7 +44,7 @@
     </table>
     <form method="post">
         <input type="hidden" name="date" value="{$date}">
-        <input type="submit" name="recollect_funds" onclick="return confirm('Bist du dir sicher?')" value="Guthaben einziehen" class="btn btn-danger">
+        <input type="submit" name="recollect_funds" onclick="return confirm('Are you sure?')" value="Recollect Funds of shown customers" class="btn btn-danger">
     </form>
 </div>
 {/if}
