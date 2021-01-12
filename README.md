@@ -3,6 +3,7 @@ This Module can be used to recollect funds after a certain time or by manual ent
 
 # Requirements
 - WHMCS Version 8, older Versions are untested.
+- **Apply Credit on invoice creation must be enabled in WHMCS Billing settings.**
 
 # Installation instructions
 
