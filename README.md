@@ -11,3 +11,7 @@ This Module can be used to recollect funds after a certain time or by manual ent
 3. Go to your WHMCS Addons Page and activate the extensions
 4. Assign Rights to Rolen
 5. Access the addon from the Addon Topmenu in WHMCS.
+
+# Any Issues
+Please open an "Issue" via Github.
+https://github.com/Thiritin/whmcs-funds-recollector/issues/new/choose
