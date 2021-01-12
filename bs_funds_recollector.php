@@ -54,7 +54,6 @@ function bs_funds_recollector_sidebar($vars)
 <div class="sidebar-header">
     <i class="fas fa-user"></i>
     Credit
-    </div>
     <ul class="menu">
         <li><a href="addonmodules.php?module=bs_funds_recollector">Mass action</a></li>
         <li><a href="addonmodules.php?module=bs_funds_recollector&action=single">Single action</a></li>
